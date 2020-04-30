@@ -13,7 +13,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 logger = logging.getLogger(__name__)
 
-token = "1215573692:AAGzZKL2MQyQRyUhGCNLIaGSU5Uzb_ehmV4"
+token = "YOUR_TOKEN_HERE"
 
 
 
