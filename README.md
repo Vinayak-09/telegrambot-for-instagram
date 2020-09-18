@@ -31,4 +31,4 @@ Upload/Push this to your heroku account !
 Pull requests are welcome.
 
 # Contact
-[Telegram](https://t.me/vinayak_09)
+[<img src="media/telegram.webp" height=50 />](https://t.me/vinayak_09)
