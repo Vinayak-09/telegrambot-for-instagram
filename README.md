@@ -2,10 +2,23 @@
 
 This telegram bot is used for downloading public posts from instagram and everyone's DP. (Private Profile pictures also)
 
+### Before deploying to heroku Create your bot using Telegram:
+    Note : BotFather is telegrams official bot to create other bots.
+* Send /newbot command to [@BotFather](https://t.me/BotFather)
+* Now send your bot name to botfather. eg InstaDownloaderBot
+* Now send username for your bot it must ends with 'bot'. eg instascrapper_bot
+* Congratulations ! Your bot is created successfully.
+* Now copy HTTP API token and keep it secure.
+* Download and unzip above source code.
+* Open TelegramBotInsta.py and search line number 16 and replace 'YOUR_TOKEN_HERE' with your HTTP API token which we got from @BotFather and save it.
+* Initialize git repository using git init command in current working directory.(Current working directory is above source code directory)
+* Now login with heroku cli. Learn more about heroku installation [here]("https://devcenter.heroku.com/articles/heroku-cli").
+* Create heroku app using heroku commands in cli -> heroku create instabotapp-example
+* Push to heroku master !
+
 ## How to deploy on Heroku
 
 Clone this Project or download as ZIP.
-
 To clone use following command in Console :
 
 ```bash
@@ -32,3 +45,4 @@ Pull requests are welcome.
 
 # Contact
 [<img src="media/telegram.webp" height=50 />](https://t.me/vinayak_09)
+
