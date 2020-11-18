@@ -12,7 +12,7 @@ This telegram bot is used for downloading public posts from instagram and everyo
 * Download and unzip above source code.
 * Open TelegramBotInsta.py and search line number 16 and replace 'YOUR_TOKEN_HERE' with your HTTP API token which we got from @BotFather and save it.
 * Initialize git repository using git init command in current working directory.(Current working directory is above source code directory)
-* Now login with heroku cli. Learn more about heroku installation [here]("https://devcenter.heroku.com/articles/heroku-cli").
+* Now login with heroku cli. Learn more about heroku installation [here](https://devcenter.heroku.com/articles/heroku-cli) .
 * Create heroku app using heroku commands in cli -> heroku create instabotapp-example
 * Push to heroku master !
 
