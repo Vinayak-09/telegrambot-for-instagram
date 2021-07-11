@@ -22,15 +22,25 @@ options = Options()
 # options.add_argument("start-maximized")
 # options.add_argument("disable-infobars")
 # options.add_argument("--disable-extensions")
+
 user_agent = "Mozilla/5.0 (X11; Linux x86_64; rv:89.0) Gecko/20100101 Firefox/89.0"
 options.add_argument(f"user-agent={user_agent}")
-driver = webdriver.Chrome(executable_path="./chromedriver", options=options)
+
+# uncomment below Line to use on Linux
+# driver = webdriver.Chrome(executable_path="./chromedriver", options=options)
+
+# uncommnet below Line to use on Windows
+# driver = webdriver.Chrome(executable_path=".\chromedriver", options=options)
+
 driver.get("https://www.instagram.com")
+
 time.sleep(3)
 driver.find_element_by_name("username").send_keys("INSTAGRAM_USERNAME")
 time.sleep(3)
 driver.find_element_by_name("password").send_keys("INSTAGRAM_PASSWORD")
 time.sleep(3)
+
+
 driver.find_element_by_class_name("sqdOP.L3NKy.y3zKF").send_keys(Keys.ENTER)
 time.sleep(5)
 saveLoginButton = driver.find_element_by_class_name("sqdOP.L3NKy.y3zKF")
