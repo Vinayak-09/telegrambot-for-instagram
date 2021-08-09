@@ -5,6 +5,9 @@ This telegram bot is used for downloading public posts from instagram and everyo
 # PS : BOT is Working 🥳
 [<img src="media/instaDp.gif"/>](https://t.me/vinayak_09)
 
+### Tutorial to Get Working BOT
+[Click Here To Open Youtube Link](https://youtu.be/TlUgnOJqrcs)
+
 
 ### Before running this project
 * If chrome not installed Install it.
