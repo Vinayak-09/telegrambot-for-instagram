@@ -42,19 +42,25 @@ driver.find_element_by_name("password").send_keys("INSTAGRAM_PASSWORD")
 time.sleep(3)
 
 
-driver.find_element_by_class_name("sqdOP.L3NKy.y3zKF").send_keys(Keys.ENTER)
+# driver.find_element_by_class_name("sqdOP.L3NKy.y3zKF").send_keys(Keys.ENTER)
+# time.sleep(5)
+# saveLoginButton = driver.find_element_by_class_name("sqdOP.L3NKy.y3zKF")
+# time.sleep(5)
+
+
+driver.find_element_by_xpath("//button[@type='submit']").send_keys(Keys.ENTER)
 time.sleep(5)
-saveLoginButton = driver.find_element_by_class_name("sqdOP.L3NKy.y3zKF")
-time.sleep(5)
+
+
 print("Your bot is Up and Running :)")
 
-if saveLoginButton.is_displayed():
-    saveLoginButton.send_keys(Keys.ENTER)
-else:
-    print("ERROR 5\nSolution :")
-    print(
-        "Step 1: Comment lines from 20 to 24\nStep 2: Rerun code\nStep 3: It will Open Chrome Window\nStep 4: Login to Your Instagram Account\nStep 5: After Loging try sending msg to BOT /instadp USERNME\n Step 6 :If it works uncomment the Code from line 20 to 24\nStep 7 :Rerun"
-    )
+# if saveLoginButton.is_displayed():
+#     saveLoginButton.send_keys(Keys.ENTER)
+# else:
+#     print("ERROR 5\nSolution :")
+#     print(
+#         "Step 1: Comment lines from 20 to 24\nStep 2: Rerun code\nStep 3: It will Open Chrome Window\nStep 4: Login to Your Instagram Account\nStep 5: After Loging try sending msg to BOT /instadp USERNME\n Step 6 :If it works uncomment the Code from line 20 to 24\nStep 7 :Rerun"
+#     )
 
 
 def start(update, context):
@@ -79,7 +85,7 @@ def instaDp(update, context):
             chat_id=update.effective_message.chat_id,
             action=telegram.ChatAction.UPLOAD_PHOTO,
         )
-        fullLink = "https://www.instagram.com/" + textInstaProfileId + "/?__a=1"
+        fullLink = "https://www.instagram.com/" + textInstaProfileId + +"/?__a=1&__d=dis"
         update.message.reply_text("Fetching Details.....")
         context.bot.send_chat_action(
             chat_id=update.effective_message.chat_id,
@@ -104,7 +110,7 @@ def instaAllPhotos(update, context):
             chat_id=update.effective_message.chat_id,
             action=telegram.ChatAction.UPLOAD_PHOTO,
         )
-        fullLink = "https://www.instagram.com/" + textInstaProfileId + "/?__a=1"
+        fullLink = "https://www.instagram.com/" + textInstaProfileId + +"/?__a=1&__d=dis"
         context.bot.send_chat_action(
             chat_id=update.effective_message.chat_id,
             action=telegram.ChatAction.UPLOAD_PHOTO,
